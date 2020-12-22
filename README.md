@@ -8,7 +8,7 @@
 
 ## Motivation
 
-After getting my feet wet with web development using React JS, I wanted to make my own porfolio website from scratch. So here we are. This repo is to show case how I built my porfolio.
+After getting my feet wet with web development using React JS, I wanted to make my own porfolio website from scratch. So here we are. This repo is to show case how I built my porfolio. You're free to clone and examine the code but modification and retribution are not allowed.
 
 ## Getting Started
 
