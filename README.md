@@ -15,7 +15,7 @@ After getting my feet wet with web development using React JS, I wanted to make 
 #### Getting the Source Code
 
 ```
-https://github.com/bnluong/my-react-portfolio.git
+git clone https://github.com/bnluong/my-react-portfolio.git
 ```
 
 #### This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
