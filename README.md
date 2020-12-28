@@ -35,6 +35,7 @@ In the project directory, you can run the following scripts:
 
 -   [React](https://reactjs.org/) - React framework
 -   [React Router Hash Link](https://github.com/rafgraph/react-router-hash-link) - Smooth scrolling through the website using React Router
+-   [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 
 ## Authors
 

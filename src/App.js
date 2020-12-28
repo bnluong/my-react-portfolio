@@ -5,14 +5,19 @@ import Projects from './components/Projects/Projects';
 import ContactMe from './components/ContactMe/ContactMe';
 import Footer from './components/Footer/Footer';
 
+const profilePic = './pic.jpg';
+
 function App() {
 	return (
 		<div className='App'>
-			<NavBar />
-			<AboutMe />
-			<Projects />
+			<NavBar profilePic={profilePic} />
+			<div className='container flex mt-24'>
+				<AboutMe />
+			</div>
+
+			{/* <Projects />
 			<ContactMe />
-			<Footer />
+			<Footer /> */}
 		</div>
 	);
 }
