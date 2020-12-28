@@ -9,15 +9,14 @@ const profilePic = './pic.jpg';
 
 function App() {
 	return (
-		<div className='App'>
+		<div className='App flex flex-col'>
 			<NavBar profilePic={profilePic} />
-			<div className='container flex mt-24'>
+			<div className='container mx-auto'>
 				<AboutMe />
+				<Projects />
+				<ContactMe />
 			</div>
-
-			{/* <Projects />
-			<ContactMe />
-			<Footer /> */}
+			<Footer />
 		</div>
 	);
 }

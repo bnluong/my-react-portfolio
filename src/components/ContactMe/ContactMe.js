@@ -1,10 +1,9 @@
 import React from 'react';
-import './ContactMe.css';
 
 function ContactMe() {
 	return (
-		<div className='ContactMe' id='contact-me'>
-			<h1>ContactMe</h1>
+		<div className='contact-me flex flex-col mt-40 p-40' id='contact-me'>
+			<h1>Contact Me</h1>
 			<p>
 				Ad reprehenderit ex aliquip pariatur do deserunt magna
 				reprehenderit ea proident tempor. Magna reprehenderit eiusmod

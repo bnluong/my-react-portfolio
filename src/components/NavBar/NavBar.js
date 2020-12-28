@@ -12,42 +12,53 @@ function NavBar(props) {
 		toggle(!isToggled);
 	};
 	return (
-		<header className='nav-bar w-full'>
+		<header className='nav-bar fixed w-full sm:flex sm:justify-between sm:items-center'>
 			<div className='flex items-center justify-between p-5'>
-				<div>
+				<div className='flex flex-row items-center'>
 					<img
-						className='h-14	rounded-full'
+						className='h-14 sm:h-16	rounded-full'
 						src={props.profilePic}
 						alt='profile-picture'
 					/>
+					<h1 className='text-2xl font-semibold text-white mx-2 sm:block hidden'>
+						Bao Luong
+					</h1>
 				</div>
-				<button className='h-10 w-10 text-white' onClick={toggleMenu}>
-					<svg
-						xmlns='http://www.w3.org/2000/svg'
-						fill='none'
-						viewBox='0 0 24 24'
-						stroke='currentColor'
+				{/* Hide the menu toggle button when screen size is big */}
+				<div className='sm:hidden'>
+					<button
+						className='h-10 w-10 text-white'
+						onClick={toggleMenu}
 					>
-						<path
-							stroke-linecap='round'
-							stroke-linejoin='round'
-							stroke-width='2'
-							d='M4 6h16M4 12h16M4 18h16'
-						/>
-					</svg>
-				</button>
+						<svg
+							xmlns='http://www.w3.org/2000/svg'
+							fill='none'
+							viewBox='0 0 24 24'
+							stroke='currentColor'
+						>
+							<path
+								stroke-linecap='round'
+								stroke-linejoin='round'
+								stroke-width='2'
+								d='M4 6h16M4 12h16M4 18h16'
+							/>
+						</svg>
+					</button>
+				</div>
 			</div>
-			{/* If isToggle == true, render the toggle menu */}
-			{isToggled && (
-				<div>
-					<nav className='flex items-center justify-center'>
-						<BrowserRouter>
-							<NavHashLink
-								smooth
-								to='#top'
-								className='mx-2 my-2 p-1 text-white block hover:bg-gray-500 rounded'
-								activeClassName='border border-white'
-							>
+			<div></div>
+			{/* If isToggle == true && screen size is small, render the toggle menu */}
+			{/* Otherwise hide the toggle menu */}
+			<div className={isToggled ? 'sm:block ' : 'sm:block hidden'}>
+				<nav className='flex items-center justify-center'>
+					<BrowserRouter>
+						<NavHashLink
+							smooth
+							to='#top'
+							className='mx-2 my-2 p-1 text-white block hover:bg-gray-500 rounded'
+							activeClassName='border border-white'
+						>
+							<div className='flex flex-col items-center justify-center'>
 								<button className='text-white h-8 w-8'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
@@ -57,13 +68,16 @@ function NavBar(props) {
 										<path d='M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z' />
 									</svg>
 								</button>
-							</NavHashLink>
-							<NavHashLink
-								smooth
-								to='/#about-me'
-								className='mx-2 my-2 p-1 text-white block hover:bg-gray-500 rounded'
-								activeClassName='border border-white'
-							>
+								<h1 className='text-sm'>Home</h1>
+							</div>
+						</NavHashLink>
+						<NavHashLink
+							smooth
+							to='/#about-me'
+							className='mx-2 my-2 p-1 text-white block hover:bg-gray-500 rounded'
+							activeClassName='border border-white'
+						>
+							<div className='flex flex-col items-center justify-center'>
 								<button className='text-white h-8 w-8'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
@@ -77,14 +91,16 @@ function NavBar(props) {
 										/>
 									</svg>
 								</button>
-							</NavHashLink>
-
-							<NavHashLink
-								smooth
-								to='/#projects'
-								className='mx-2 my-2 p-1 text-white block hover:bg-gray-500 rounded'
-								activeClassName='border border-white'
-							>
+								<h1 className='text-sm'>About Me</h1>
+							</div>
+						</NavHashLink>
+						<NavHashLink
+							smooth
+							to='/#projects'
+							className='mx-2 my-2 p-1 text-white block hover:bg-gray-500 rounded'
+							activeClassName='border border-white'
+						>
+							<div className='flex flex-col items-center justify-center'>
 								<button className='text-white h-8 w-8'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
@@ -99,14 +115,16 @@ function NavBar(props) {
 										/>
 									</svg>
 								</button>
-							</NavHashLink>
-
-							<NavHashLink
-								smooth
-								to='/#contact-me'
-								className='mx-2 my-2 p-1 text-white block hover:bg-gray-500 rounded'
-								activeClassName='border border-white'
-							>
+								<h1 className='text-sm'>Project</h1>
+							</div>
+						</NavHashLink>
+						<NavHashLink
+							smooth
+							to='/#contact-me'
+							className='mx-2 my-2 p-1 text-white block hover:bg-gray-500 rounded'
+							activeClassName='border border-white'
+						>
+							<div className='flex flex-col items-center justify-center'>
 								<button className='text-white h-8 w-8'>
 									<svg
 										xmlns='http://www.w3.org/2000/svg'
@@ -122,11 +140,12 @@ function NavBar(props) {
 										/>
 									</svg>
 								</button>
-							</NavHashLink>
-						</BrowserRouter>
-					</nav>
-				</div>
-			)}
+								<h1 className='text-sm'>Contact Me</h1>
+							</div>
+						</NavHashLink>
+					</BrowserRouter>
+				</nav>
+			</div>
 		</header>
 	);
 }
