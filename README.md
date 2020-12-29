@@ -34,7 +34,8 @@ In the project directory, you can run the following scripts:
 ## Built With
 
 -   [React](https://reactjs.org/) - React framework
--   [React Router Hash Link](https://github.com/rafgraph/react-router-hash-link) - Smooth scrolling through the website using React Router
+-   [react-router-hash-link](https://www.npmjs.com/package/react-router-hash-link) - Smooth scrolling through the website using React Router
+-   [react-tooltip](https://www.npmjs.com/package/react-tooltip) - Tooltip components
 -   [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 
 ## Authors
