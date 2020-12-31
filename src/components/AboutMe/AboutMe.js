@@ -2,10 +2,7 @@ import React from 'react';
 
 function AboutMe() {
 	return (
-		<div
-			className='flex flex-col h-screen justify-center'
-			id='about-me'
-		></div>
+		<div className='flex mt-16 h-screen bg-blue-300' id='about-me'></div>
 	);
 }
 
