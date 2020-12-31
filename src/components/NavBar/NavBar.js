@@ -12,20 +12,20 @@ function NavBar(props) {
 		toggle(!isToggled);
 	};
 	return (
-		<header className='nav-bar fixed w-full top-0 animated z-40 lg:px-16 px-6 lg:flex lg:items-center lg:justify-between py-2'>
+		<header className='nav-bar fixed w-full top-0 animated z-40 md:px-16 px-6 md:flex md:items-center md:justify-between py-2'>
 			<div className='flex items-center justify-between'>
 				<div className='flex-1 flex items-center'>
 					<img
-						className='h-12 rounded-full lg:hidden block '
-						src={props.profilePic}
+						className='h-12 rounded-full md:hidden block '
+						src={props.navbarPic}
 						alt='profile-picture'
 					/>
-					<h1 className='text-2xl font-serif font-semibold text-white mx-2 lg:block hidden'>
+					<h1 className='text-2xl font-serif font-semibold text-white mx-2 md:block hidden'>
 						Bao Luong
 					</h1>
 				</div>
 				{/* Hide the menu toggle button when screen size is big */}
-				<div className='lg:hidden'>
+				<div className='md:hidden'>
 					<button
 						className='h-10 w-10 text-white'
 						onClick={toggleMenu}
@@ -48,12 +48,12 @@ function NavBar(props) {
 			</div>
 			{/* If isToggle == true && screen size is not large, render the toggle menu */}
 			{/* Otherwise hide the toggle menu */}
-			<div className={isToggled ? 'lg:block ' : 'lg:block hidden'}>
+			<div className={isToggled ? 'md:block ' : 'md:block hidden'}>
 				<nav className='flex items-center justify-center'>
 					<NavHashLink
 						smooth
 						to='#top'
-						className='lg:px-5 lg:py-1 px-2 block text-white hover:bg-gray-700 rounded'
+						className='md:px-5 md:py-1 px-2 block text-white hover:bg-gray-700 rounded'
 						activeClassName='border-b-2 border-transparent border-white'
 					>
 						<button
@@ -81,7 +81,7 @@ function NavBar(props) {
 					<NavHashLink
 						smooth
 						to='#about-me'
-						className='lg:px-5 lg:py-1 px-2 block text-white hover:bg-gray-700 rounded'
+						className='md:px-5 md:py-1 px-2 block text-white hover:bg-gray-700 rounded'
 						activeClassName='border-b-2 border-transparent border-white'
 					>
 						<button
@@ -113,7 +113,7 @@ function NavBar(props) {
 					<NavHashLink
 						smooth
 						to='#projects'
-						className='lg:px-5 lg:py-1 px-2 block text-white hover:bg-gray-700 rounded'
+						className='md:px-5 md:py-1 px-2 block text-white hover:bg-gray-700 rounded'
 						activeClassName='border-b-2 border-transparent border-white'
 					>
 						<button
@@ -146,7 +146,7 @@ function NavBar(props) {
 					<NavHashLink
 						smooth
 						to='#contact-me'
-						className='lg:px-5 lg:py-1 px-2 block text-white hover:bg-gray-700 rounded'
+						className='md:px-5 md:py-1 px-2 block text-white hover:bg-gray-700 rounded'
 						activeClassName='border-b-2 border-transparent border-white'
 					>
 						<button
