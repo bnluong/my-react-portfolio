@@ -2,3 +2,16 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
+.heading {
+	display: flex;
+	align-items: center;
+}
+.heading:after {
+	content: '';
+	width: 60%;
+	height: 2px;
+	margin-left: 1rem;
+	color: #53565c;
+	border-bottom: 1px solid;
+}
