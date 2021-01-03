@@ -5,6 +5,6 @@
 @import 'tailwindcss/utilities';
 
 /* Custom CSS */
-.btn {
-	@apply rounded-full py-2 px-3 uppercase text-xs font-mono cursor-pointer tracking-wider;
+.badge {
+	@apply rounded-sm py-2 px-3 uppercase text-sm tracking-wider;
 }

@@ -45,48 +45,49 @@ function AboutMe() {
 							my technical skills.
 						</h1>
 
-						<div className='flex flex-wrap my-2'>
-							<div className='btn bg-gray-500 text-white m-1'>
+						<div className='flex flex-wrap my-3'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								C/C++
 							</div>
-							<div className='btn bg-gray-500 text-white m-1'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								Java
 							</div>
-							<div className='btn bg-gray-500 text-white m-1'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								Python
 							</div>
-							<div className='btn bg-gray-500 text-white m-1'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								HTML5
 							</div>
-							<div className='btn bg-gray-500 text-white m-1'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								CSS
 							</div>
-							<div className='btn bg-gray-500 text-white m-1'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								ES6
 							</div>
-							<div className='btn bg-gray-500 text-white m-1'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								Node JS
 							</div>
-							<div className='btn bg-gray-500 text-white m-1'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								React
 							</div>
-							<div className='btn bg-gray-500 text-white m-1'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								SQL
 							</div>
-							<div className='btn bg-gray-500 text-white m-1'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								REST API
 							</div>
-							<div className='btn bg-gray-500 text-white m-1'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								VS Code
 							</div>
-							<div className='btn bg-gray-500 text-white m-1'>
+							<div className='badge bg-gray-500 text-white font-mono m-1'>
 								Linux/Unix
 							</div>
 						</div>
 						<h1 className='md:mt-0 mt-3'>
 							Wanna know more? Check out my{' '}
 							<a
-								href='#projects'
+								href='./resume.pdf'
+								download
 								className='text-blue-500 underline'
 							>
 								résumé
