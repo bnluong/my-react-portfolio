@@ -11,7 +11,7 @@ function Home(props) {
 					</h1>
 				</div>
 				<div className='flex md:flex-row flex-col'>
-					<div className='flex flex-col items-center '>
+					<div className='flex flex-col items-center'>
 						<img
 							src={props.profilePic}
 							alt=''
@@ -56,7 +56,7 @@ function Home(props) {
 								}}
 							/>
 						</div>
-						<h1 className='md:text-lg font-light md:px-0 px-6 md:py-6'>
+						<h1 className='md:px-0 px-6 md:py-6 md:text-lg'>
 							I'm a new graduate with a BS in Computer Science
 							from UC Irvine. I'm passionate about making high
 							quality and impactful software with a creative

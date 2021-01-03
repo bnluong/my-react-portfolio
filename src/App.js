@@ -1,4 +1,3 @@
-import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
 import AboutMe from './components/AboutMe/AboutMe';
@@ -12,7 +11,7 @@ const profilePic = './profile-pic.jpg';
 
 function App() {
 	return (
-		<div className='App flex flex-col h-full bg-gray-700'>
+		<div className='App flex flex-col h-full bg-gray-600'>
 			<BrowserRouter>
 				<NavBar navbarPic={navbarPic} />
 			</BrowserRouter>
