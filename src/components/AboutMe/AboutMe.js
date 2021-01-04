@@ -10,7 +10,7 @@ function AboutMe() {
 				<div className='heading lg:py-12 py-3'>
 					<h1 className='text-2xl font-bold'>About Me</h1>
 				</div>
-				<div className='md:grid md:grid-cols-2 md:text-lg'>
+				<div className='md:grid md:grid-cols-2 md:text-lg '>
 					<div className='md:mr-6'>
 						<h1>
 							Hi there! I'm a recent computer science graduate

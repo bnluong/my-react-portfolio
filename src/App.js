@@ -11,16 +11,16 @@ const profilePic = './profile-pic.jpg';
 
 function App() {
 	return (
-		<div className='App flex flex-col h-full bg-gray-600'>
+		<div className='App flex flex-col h-full '>
 			<BrowserRouter>
 				<NavBar navbarPic={navbarPic} />
 			</BrowserRouter>
 
-			<div className='container mx-auto text-gray-300'>
+			<div className='container mx-auto '>
 				<Home profilePic={profilePic} />
 				<AboutMe />
-				{/* <Projects />
-				<ContactMe /> */}
+				<Projects />
+				{/*<ContactMe /> */}
 			</div>
 			<Footer />
 		</div>

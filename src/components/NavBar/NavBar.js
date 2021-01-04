@@ -26,7 +26,7 @@ function NavBar(props) {
 					<a
 						href='./resume.pdf'
 						download
-						className='px-3 py-3 block text-white hover:bg-gray-700 rounded'
+						className='px-3 block text-white hover:bg-gray-700 rounded'
 					>
 						<button
 							className='text-white h-8 w-8 my-1 border-solid border-white border-2'

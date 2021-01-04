@@ -28,7 +28,6 @@ function Home(props) {
 						<div className='inline-block pb-3'>
 							<SocialIcon
 								url='https://linkedin.com/in/bao-luong'
-								bgColor='#d1d5db'
 								style={{
 									maxWidth: '2.5rem',
 									maxHeight: '2.5rem',
@@ -39,7 +38,6 @@ function Home(props) {
 							/>
 							<SocialIcon
 								url='https://github.com/bnluong'
-								bgColor='#d1d5db'
 								style={{
 									maxWidth: '2.5rem',
 									maxHeight: '2.5rem',
@@ -48,7 +46,7 @@ function Home(props) {
 							/>
 							<SocialIcon
 								url='mailto:bnluong@uci.edu'
-								bgColor='#d1d5db'
+								bgColor='#52afd3'
 								style={{
 									maxWidth: '2.5rem',
 									maxHeight: '2.5rem',
