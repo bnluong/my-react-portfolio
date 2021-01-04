@@ -42,6 +42,7 @@ In the project directory, you can run the following scripts:
 
 -   [react-router-hash-link](https://www.npmjs.com/package/react-router-hash-link) - Smooth scrolling through the website using React Router
 -   [react-tooltip](https://www.npmjs.com/package/react-tooltip) - Tooltip components
+-   [react-tabs](https://www.npmjs.com/package/react-tabs) - Tabs components
 -   [react-social-icons](https://www.npmjs.com/package/react-social-icons) - Icons library
 -   [Hero Icons](https://heroicons.com/) - Icons library
 
