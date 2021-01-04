@@ -14,15 +14,15 @@ function App() {
 		<div className='App flex flex-col h-full '>
 			<BrowserRouter>
 				<NavBar navbarPic={navbarPic} />
-			</BrowserRouter>
 
-			<div className='container mx-auto '>
-				<Home profilePic={profilePic} />
-				<AboutMe />
-				<Projects />
-				{/*<ContactMe /> */}
-			</div>
-			<Footer />
+				<div className='container mx-auto '>
+					<Home profilePic={profilePic} />
+					<AboutMe />
+					<Projects />
+					{/*<ContactMe /> */}
+				</div>
+				<Footer />
+			</BrowserRouter>
 		</div>
 	);
 }

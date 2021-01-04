@@ -47,6 +47,7 @@ function Home(props) {
 							<SocialIcon
 								url='mailto:bnluong@uci.edu'
 								bgColor='#52afd3'
+								fgColor='#ffffff'
 								style={{
 									maxWidth: '2.5rem',
 									maxHeight: '2.5rem',
