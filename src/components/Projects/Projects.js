@@ -1,5 +1,6 @@
 import React from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { SocialIcon } from 'react-social-icons';
 
 function Projects() {
 	return (
@@ -27,44 +28,49 @@ function Projects() {
 								This is my web development portfolio.
 							</h1>
 							<div className='p-3 mt-3 border-2 border-separate sm:shadow-xl rounded '>
-								<div className=''>
-									<img src='./homepage.png' alt='' />
-								</div>
-								<div className='text-xl mt-3 font-bold'>
-									Buy-a-Movie
-								</div>
-								<div className='mt-3'>
-									Buy-a-Movie is a mock e-commerce website
-									that sells movies. The website has standard
-									e-commerce features such as searching,
-									browsing, add to cart, checkout, login,
-									create account, and many more.
-								</div>
-								<div className='flex flex-wrap mt-3'>
-									<div className='badge bg-blue-500 text-white font-mono m-1'>
-										HTML/CSS/Vanilla JS
+								<div className='md:grid lg:grid-cols-3 md:grid-cols-2'>
+									<div className='md:mr-6 lg:col-span-2'>
+										<img src='./homepage.png' alt='' />
 									</div>
-									<div className='badge bg-blue-500 text-white font-mono m-1'>
-										Bootstrap
-									</div>
-									<div className='badge bg-blue-500 text-white font-mono m-1'>
-										jQuery
-									</div>
-									<div className='badge bg-blue-500 text-white font-mono m-1'>
-										Java EE
-									</div>
-									<div className='badge bg-blue-500 text-white font-mono m-1'>
-										SQL
-									</div>
-									<div className='badge bg-blue-500 text-white font-mono m-1'>
-										Tomcat Webserver
-									</div>
-									<div className='badge bg-blue-500 text-white font-mono m-1'>
-										REST API
+									<div className='flex flex-col flex-1 justify-evenly'>
+										<div className='flex flex-col md:mt-0 mt-3'>
+											<h1 className='text-xl font-bold'>
+												Buy-a-Movie
+											</h1>
+											<div className='mt-2'>
+												<SocialIcon
+													url='https://github.com/bnluong/buy-a-movie'
+													style={{
+														maxWidth: '2rem',
+														maxHeight: '2rem',
+													}}
+												/>
+											</div>
+										</div>
+										<div className='mt-3'>
+											Buy-a-Movie is a mock e-commerce
+											website that sells movies. The
+											website has standard e-commerce
+											features such as searching,
+											browsing, add to cart, checkout,
+											login, create account, and many
+											more.
+										</div>
+										<div className='flex flex-wrap text-xs font-mono mt-3'>
+											<p className='mr-3'>
+												HTML/CSS/VanillaJS
+											</p>
+											<p className='mr-3'>BootstrapS</p>
+											<p className='mr-3'>jQuery</p>
+											<p className='mr-3'>Java EE</p>
+											<p className='mr-3'>SQL</p>
+											<p className='mr-3'>Tomcat</p>
+											<p className='mr-3'>REST API</p>
+										</div>
 									</div>
 								</div>
 							</div>
-							<div className='p-3 mt-3 border-2 border-separate sm:shadow-xl rounded '>
+							<div className='p-3 mt-12 border-2 border-separate sm:shadow-xl rounded '>
 								Lorem ipsum dolor sit amet consectetur
 								adipisicing elit. Soluta, illo quas. Placeat
 								excepturi qui pariatur deserunt nam odit officia
