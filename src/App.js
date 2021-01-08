@@ -7,13 +7,14 @@ import Footer from './components/Footer/Footer';
 import { BrowserRouter } from 'react-router-dom';
 
 const navbarPic = './navbar-pic.jpg';
+const resumeLink = './resume.pdf';
 const profilePic = './profile-pic.jpg';
 
 function App() {
 	return (
 		<div className='App flex flex-col h-full '>
 			<BrowserRouter>
-				<NavBar navbarPic={navbarPic} />
+				<NavBar navbarPic={navbarPic} resumeLink={resumeLink} />
 
 				<div className='container mx-auto '>
 					<Home profilePic={profilePic} />
