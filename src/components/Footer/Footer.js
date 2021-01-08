@@ -36,7 +36,7 @@ function Footer() {
 					/>
 				</div>
 				<div className='mt-3 sm:text-base text-sm font-mono'>
-					Bao Luong © {new Date().getFullYear()}. All rights reserved.
+					Bao Luong © {new Date().getFullYear()}.
 				</div>
 			</div>
 		</div>
