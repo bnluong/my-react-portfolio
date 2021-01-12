@@ -4,7 +4,7 @@ import { HashLink } from 'react-router-hash-link';
 function AboutMe() {
 	return (
 		<div
-			className='flex items-center justify-center min-h-screen md:py-0 pt-24'
+			className='flex items-center justify-center min-h-screen md:pt-0 py-28'
 			id='about-me'
 		>
 			<div className='mx-3 md:mx-12 lg:mx-36'>

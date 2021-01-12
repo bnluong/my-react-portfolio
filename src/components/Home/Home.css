@@ -1,0 +1,31 @@
+/* This CSS is purely for animating the typing effects. Other styling was done with Tailwind. */
+
+.hello {
+	overflow: hidden;
+	white-space: nowrap;
+	animation: typing 1.5s steps(40, end);
+}
+
+.cursor {
+	animation: blinking-cursor 600ms steps(30, end) infinite;
+}
+
+/* Typing effect */
+@keyframes typing {
+	from {
+		width: 0ch;
+	}
+	to {
+		width: 12ch;
+	}
+}
+
+/* Cursor blinking effect */
+@keyframes blinking-cursor {
+	from {
+		border-bottom-color: white;
+	}
+	to {
+		border-bottom-color: transparent;
+	}
+}

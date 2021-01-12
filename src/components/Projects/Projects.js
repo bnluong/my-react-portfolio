@@ -5,10 +5,10 @@ import { SocialIcon } from 'react-social-icons';
 function Projects() {
 	return (
 		<div
-			className='flex items-center justify-center min-h-screen md:pt-16 pt-28'
+			className='flex items-center justify-center min-h-screen md:pt-0 py-28'
 			id='projects'
 		>
-			<div className='mx-3 md:mx-12 lg:mx-36'>
+			<div className='mx-3 md:mx-12 lg:mx-36 '>
 				<div className='heading lg:py-12 py-3'>
 					<h1 className='text-2xl font-bold'>Projects</h1>
 				</div>
