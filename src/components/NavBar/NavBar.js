@@ -5,10 +5,12 @@ import ReactTooltip from 'react-tooltip';
 function NavBar(props) {
 	// State for displaying the menu (toggling the menu when in mobile mode)
 	const [isToggled, toggle] = useState(false);
+
 	// Toogle the menu when user click the toggle button
 	const toggleMenu = () => {
 		toggle(!isToggled);
 	};
+
 	return (
 		<header className='nav-bar fixed w-full top-0 animated z-40 md:px-16 px-6 py-2 md:flex md:items-center md:justify-between shadow-md border-b-2 border-gray-500 bg-white'>
 			<div className='flex items-center justify-between'>
@@ -20,7 +22,7 @@ function NavBar(props) {
 						<img
 							className='h-10 w-10 rounded-full md:hidden'
 							src={props.navbarPic}
-							alt='navbar-picture'
+							alt='navbar-pic'
 						/>
 					</NavHashLink>
 				</div>
@@ -41,8 +43,7 @@ function NavBar(props) {
 					</button>
 				</div>
 			</div>
-			{/* If isToggle == true && screen size is not large, render the toggle menu */}
-			{/* Otherwise hide the toggle menu */}
+			{/* If isToggle == true && screen size is not large, render the toggle menu. Otherwise hide the toggle menu */}
 			<div className={isToggled ? 'md:block ' : 'md:block hidden'}>
 				<nav className='flex flex-wrap items-center sm:justify-evenly justify-between md:py-0 py-3 font-mono'>
 					<NavHashLink
