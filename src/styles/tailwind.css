@@ -6,5 +6,5 @@
 
 /* Custom CSS */
 .badge {
-	@apply rounded-md inline-block py-1 px-2 uppercase;
+	@apply rounded-md inline-block py-1 px-2 cursor-pointer tracking-wide;
 }

@@ -15,10 +15,10 @@ function Projects() {
 
 				<Tabs selectedTabClassName='border-b-2 border-transparent border-blue-300'>
 					<TabList className='flex flex-row'>
-						<Tab className='mr-3 px-1 py-2 block hover:bg-blue-200 rounded font-semibold sm:text-base text-sm'>
+						<Tab className='mr-3 py-2 block hover:bg-blue-200 rounded font-semibold sm:text-base text-sm'>
 							Personal Projects
 						</Tab>
-						<Tab className='mr-3 px-1 py-2 block hover:bg-blue-200 rounded font-semibold sm:text-base text-sm'>
+						<Tab className='mr-3 py-2 block hover:bg-blue-200 rounded font-semibold sm:text-base text-sm'>
 							Academic Projects
 						</Tab>
 					</TabList>
