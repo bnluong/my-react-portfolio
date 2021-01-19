@@ -8,7 +8,7 @@ function Projects() {
 			className='flex items-center justify-center min-h-screen md:pt-0 py-28'
 			id='projects'
 		>
-			<div className='mx-3 md:mx-12 lg:mx-36 '>
+			<div className='lg:mx-36 md:mx-12 mx-6 w-full'>
 				<div className='heading lg:py-12 py-3'>
 					<h1 className='text-2xl font-bold'>Projects</h1>
 				</div>

@@ -6,5 +6,5 @@
 
 /* Custom CSS */
 .badge {
-	@apply rounded-sm py-2 px-3 uppercase text-sm tracking-wider;
+	@apply rounded-md inline-block py-1 px-2 uppercase;
 }

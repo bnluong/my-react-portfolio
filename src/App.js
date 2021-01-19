@@ -9,7 +9,8 @@ import { BrowserRouter } from 'react-router-dom';
 const navbarPic = './navbar-pic.jpg';
 const resumeLink = './resume.pdf';
 
-const background = './background1.jpg';
+const backgrounds = ['./background.jpg', './background1.jpg'];
+const background = backgrounds[Math.floor(Math.random() * backgrounds.length)];
 const greeting = 'Hello World!';
 const subGreeting = 'My name is Bao Luong';
 const title = 'Aspiring Software Engineer';
@@ -19,21 +20,26 @@ const socialLinks = [
 	{
 		url: 'https://linkedin.com/in/bao-luong',
 		fgColor: '#ffffff',
-		bgColor: '#2f2f2f',
+		bgColor: '#1f1f1f',
 	},
 	{
 		url: 'https://github.com/bnluong',
 		fgColor: '#ffffff',
-		bgColor: '#2f2f2f',
+		bgColor: '#1f1f1f',
 	},
 	{
 		url: 'mailto:bnluong@uci.edu',
 		fgColor: '#ffffff',
-		bgColor: '#2f2f2f',
+		bgColor: '#1f1f1f',
 	},
 ];
 
-const elevatorPitch = {};
+const elevatorPitch = `I'm a new graduate with a BS in Computer Science
+from UC Irvine. I'm passionate about making high
+quality and impactful software with a creative
+problem solving mindset. I'm currently on a lookout
+for a SWE position to utilize what I have learned
+and to further my skills.`;
 
 function App() {
 	return (
@@ -47,6 +53,7 @@ function App() {
 					title={title}
 					profilePic={profilePic}
 					socialLinks={socialLinks}
+					elevatorPitch={elevatorPitch}
 				/>
 				<div className='container mx-auto'>
 					<AboutMe />
