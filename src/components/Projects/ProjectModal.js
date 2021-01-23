@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 const ProjectModal = (props) => {
-	return (
-		<div className={props.show ? 'visible' : 'hidden'}>
+	if (props.show) {
+		return (
 			<div className='project-modal-wrapper fixed top-0 bottom-0 left-0 right-0'>
 				<div
 					className='project-modal-backdrop fixed top-0 bottom-0 left-0 right-0 z-10 bg-black bg-opacity-80'
@@ -70,8 +70,9 @@ const ProjectModal = (props) => {
 					</div>
 				</div>
 			</div>
-		</div>
-	);
+		);
+	}
+	return null;
 };
 
 export default ProjectModal;
