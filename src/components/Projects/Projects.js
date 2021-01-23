@@ -1,9 +1,6 @@
 import React from 'react';
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { SocialIcon } from 'react-social-icons';
 
 import ProjectCard from './ProjectCard';
-import ProjectModal from './ProjectModal';
 
 function Projects() {
 	return (

@@ -1,15 +1,13 @@
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
-const getColor = () => {
-	const r = Math.floor(Math.random() * 16).toString(16);
-	const b = Math.floor(Math.random() * 16).toString(16);
-	const g = Math.floor(Math.random() * 16).toString(16);
-	return { backgroundColor: '#' + r + b + g };
-};
-
-console.log(getColor);
 function AboutMe(props) {
+	const getColor = () => {
+		const r = Math.floor(Math.random() * 16).toString(16);
+		const b = Math.floor(Math.random() * 16).toString(16);
+		const g = Math.floor(Math.random() * 16).toString(16);
+		return { backgroundColor: '#' + r + b + g };
+	};
 	return (
 		<div
 			className='flex items-center justify-center min-h-screen md:pt-0 py-28'
