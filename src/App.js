@@ -22,16 +22,22 @@ const socialLinks = [
 		url: 'https://linkedin.com/in/bao-luong',
 		fgColor: '#ffffff',
 		bgColor: '#1f1f1f',
+		maxWidth: '3rem',
+		maxHeight: '3rem',
 	},
 	{
 		url: 'https://github.com/bnluong',
 		fgColor: '#ffffff',
 		bgColor: '#1f1f1f',
+		maxWidth: '3rem',
+		maxHeight: '3rem',
 	},
 	{
 		url: 'mailto:bnluong@uci.edu',
 		fgColor: '#ffffff',
 		bgColor: '#1f1f1f',
+		maxWidth: '3rem',
+		maxHeight: '3rem',
 	},
 ];
 const elevatorPitch = `I'm a new graduate with a BS in Computer Science
@@ -88,6 +94,94 @@ const skills = [
 	'Linux/Unix',
 ];
 
+// Projects data
+const projects = [
+	{
+		projectTitle: 'Buy-a-Movie',
+		projectImg: './homepage.png',
+		projectShortDescription:
+			'Buy-a-Movie is a mock e-commerce website that sells movies.',
+		projectDescription:
+			'Buy-a-Movie is a mock e-commerce website that sells movies. The website has standard e-commerce features such as searching, browsing, add to cart, checkout, login, create account, authentication, etc.',
+		projectLinks: [
+			{
+				url: 'https://github.com/bnluong/buy-a-movie',
+				maxWidth: '2.5rem',
+				maxHeight: '2.5rem',
+			},
+		],
+		projectSkills: [
+			'HTML/CSS/VanillaJS',
+			'Bootstrap',
+			'jQuery',
+			'Java EE',
+			'SQL',
+			'Tomcat',
+			'REST API',
+		],
+	},
+	{
+		projectTitle: 'React Portfolio',
+		projectImg: './homepage1.png',
+		projectShortDescription: 'My portfolio site made with ReactJS',
+		projectDescription:
+			'My own personal website made from scratch with ReactJS and Tailwind CSS. You are looking at it!',
+		projectLinks: [
+			{
+				url: 'https://github.com/bnluong/my-react-portfolio',
+				maxWidth: '2.5rem',
+				maxHeight: '2.5rem',
+			},
+			{
+				url: 'http://localhost:3000/',
+				maxWidth: '2.5rem',
+				maxHeight: '2.5rem',
+			},
+		],
+		projectSkills: ['HTML', 'CSS', 'JS/ES6', 'React JS', 'Tailwind CSS'],
+	},
+	{
+		projectTitle: 'React Portfolio',
+		projectImg: './homepage1.png',
+		projectShortDescription: 'My portfolio site made with ReactJS',
+		projectDescription:
+			'My own personal website made from scratch with ReactJS and Tailwind CSS. You are looking at it!',
+		projectLinks: [
+			{
+				url: 'https://github.com/bnluong/my-react-portfolio',
+				maxWidth: '2.5rem',
+				maxHeight: '2.5rem',
+			},
+			{
+				url: 'http://localhost:3000/',
+				maxWidth: '2.5rem',
+				maxHeight: '2.5rem',
+			},
+		],
+		projectSkills: ['HTML', 'CSS', 'JS/ES6', 'React JS', 'Tailwind CSS'],
+	},
+	{
+		projectTitle: 'React Portfolio',
+		projectImg: './homepage1.png',
+		projectShortDescription: 'My portfolio site made with ReactJS',
+		projectDescription:
+			'My own personal website made from scratch with ReactJS and Tailwind CSS. You are looking at it!',
+		projectLinks: [
+			{
+				url: 'https://github.com/bnluong/my-react-portfolio',
+				maxWidth: '2.5rem',
+				maxHeight: '2.5rem',
+			},
+			{
+				url: 'http://localhost:3000/',
+				maxWidth: '2.5rem',
+				maxHeight: '2.5rem',
+			},
+		],
+		projectSkills: ['HTML', 'CSS', 'JS/ES6', 'React JS', 'Tailwind CSS'],
+	},
+];
+
 function App() {
 	return (
 		<div className='App flex flex-col h-full '>
@@ -109,7 +203,7 @@ function App() {
 						skills={skills}
 						resumeLink={resumeLink}
 					/>
-					<Projects />
+					<Projects projects={projects} />
 					<ContactMe />
 				</div>
 				<Footer />

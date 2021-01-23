@@ -2,7 +2,7 @@ import React from 'react';
 
 import ProjectCard from './ProjectCard';
 
-function Projects() {
+function Projects({ projects }) {
 	return (
 		<div
 			className='flex items-center justify-center min-h-screen md:pt-0 py-28'
@@ -13,10 +13,9 @@ function Projects() {
 					<h1 className='text-xl font-bold uppercase'>Projects</h1>
 				</div>
 				<div className='md:grid lg:grid-cols-3 md:grid-cols-2 flex justify-center flex-wrap'>
-					<ProjectCard />
-					<ProjectCard />
-					<ProjectCard />
-					<ProjectCard />
+					{projects.map((project, index) => (
+						<ProjectCard key={index} project={project} />
+					))}
 				</div>
 			</div>
 		</div>

@@ -9,9 +9,10 @@ const LinkIcon = (props) => {
 				fgColor={props.fgColor}
 				bgColor={props.bgColor}
 				style={{
-					maxWidth: '3rem',
-					maxHeight: '3rem',
-					margin: '0rem .5rem',
+					marginTop: '.5rem',
+					marginRight: '.5rem',
+					maxWidth: `${props.maxWidth}`,
+					maxHeight: `${props.maxHeight}`,
 				}}
 			/>
 		</div>

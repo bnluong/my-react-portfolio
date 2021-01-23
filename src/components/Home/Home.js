@@ -45,6 +45,8 @@ function Home(props) {
 								url={link.url}
 								fgColor={link.fgColor}
 								bgColor={link.bgColor}
+								maxWidth={link.maxWidth}
+								maxHeight={link.maxHeight}
 							/>
 						))}
 					</div>
