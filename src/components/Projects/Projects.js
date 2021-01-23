@@ -17,9 +17,9 @@ function Projects() {
 				</div>
 				<div className='md:grid lg:grid-cols-3 md:grid-cols-2 flex justify-center flex-wrap'>
 					<ProjectCard />
-					{/* <ProjectCard />
 					<ProjectCard />
-					<ProjectCard /> */}
+					<ProjectCard />
+					<ProjectCard />
 				</div>
 			</div>
 		</div>

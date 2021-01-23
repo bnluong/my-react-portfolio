@@ -14,8 +14,8 @@ const ProjectCard = () => {
 		<div
 			className='justify-center mr-5 mt-12 border-2 border-separate sm:shadow-md rounded-lg cursor-pointer transition duration-500 ease-in-out transform hover:-translate-y-5'
 			style={{ maxWidth: '512px', height: 'auto' }}
-			onClick={openModal}
 		>
+			<div className='fixed w-full h-full' onClick={openModal}></div>
 			<div>
 				<img
 					className='object-scale-down'
