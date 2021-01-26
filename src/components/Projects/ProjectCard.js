@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import ProjectModal from './ProjectModal';
-import usePortal from './usePortal';
+import usePortal from '../../hooks/usePortal';
 
 const ProjectCard = ({ project }) => {
 	// State for displaying the modal
