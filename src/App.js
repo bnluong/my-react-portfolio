@@ -106,8 +106,8 @@ const projects = [
 		projectLinks: [
 			{
 				url: 'https://github.com/bnluong/buy-a-movie',
-				maxWidth: '2.5rem',
-				maxHeight: '2.5rem',
+				maxWidth: '2rem',
+				maxHeight: '2rem',
 			},
 		],
 		projectSkills: [
@@ -129,13 +129,13 @@ const projects = [
 		projectLinks: [
 			{
 				url: 'https://github.com/bnluong/my-react-portfolio',
-				maxWidth: '2.5rem',
-				maxHeight: '2.5rem',
+				maxWidth: '2rem',
+				maxHeight: '2rem',
 			},
 			{
 				url: 'http://localhost:3000/',
-				maxWidth: '2.5rem',
-				maxHeight: '2.5rem',
+				maxWidth: '2rem',
+				maxHeight: '2rem',
 			},
 		],
 		projectSkills: ['HTML', 'CSS', 'JS/ES6', 'React JS', 'Tailwind CSS'],
