@@ -2,7 +2,7 @@ import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
 import AboutMe from './components/AboutMe/AboutMe';
 import Projects from './components/Projects/Projects';
-import ContactMe from './components/ContactMe/ContactMe';
+import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import { BrowserRouter } from 'react-router-dom';
 
@@ -204,7 +204,7 @@ function App() {
 						resumeLink={resumeLink}
 					/>
 					<Projects projects={projects} />
-					<ContactMe />
+					<Contact />
 				</div>
 				<Footer />
 			</BrowserRouter>

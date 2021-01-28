@@ -64,7 +64,7 @@ const ProjectModal = ({ show, closeModal, project }) => {
 						<div className='lg:text-lg mt-6'>
 							{project.projectDescription}
 						</div>
-						<div className='flex flex-wrap lg:tex-lg text-xs font-mono mt-6'>
+						<div className='flex flex-wrap text-sm font-mono mt-6'>
 							{project.projectSkills.map((skill, index) => (
 								<p
 									key={index}

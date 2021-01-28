@@ -76,7 +76,7 @@ function NavBar(props) {
 						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500'
 						activeClassName='border-b-2 border-blue-500 font-semibold '
 					>
-						Contact Me
+						Contact
 					</NavHashLink>
 					<a href={props.resumeLink} download>
 						<button

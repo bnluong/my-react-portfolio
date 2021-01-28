@@ -25,10 +25,12 @@ const ProjectCard = ({ project }) => {
 					/>
 				</div>
 				<div className='mt-6 p-6'>
-					<h1 className='text-lg font-bold font-mono'>
+					<h1 className='text-xl font-bold font-mono'>
 						{project.projectTitle}
 					</h1>
-					<h1 className='mt-3'>{project.projectShortDescription}</h1>
+					<h1 className='mt-3 lg:text-lg'>
+						{project.projectShortDescription}
+					</h1>
 				</div>
 			</div>
 

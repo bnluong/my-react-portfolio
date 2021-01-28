@@ -4,14 +4,14 @@ import getColor from '../../utilities/getColor';
 function AboutMe(props) {
 	return (
 		<div
-			className='flex items-center justify-center min-h-screen md:pt-0 py-28'
+			className='flex items-center justify-center min-h-screen lg:pt-0 pt-36'
 			id='about-me'
 		>
 			<div className='lg:mx-36 md:mx-12 mx-6 w-full'>
 				<div className='heading'>
-					<h1 className='text-xl font-bold uppercase'>About Me</h1>
+					<h1 className='text-2xl font-bold uppercase'>About Me</h1>
 				</div>
-				<div className='mt-12 text-justify'>
+				<div className='mt-12 lg:text-lg text-justify'>
 					{props.about.map((about, index) => (
 						<h1 key={index} className='mt-6'>
 							{about}
@@ -66,7 +66,7 @@ function AboutMe(props) {
 							Skills
 						</h1>
 					</div>
-					<div className='col-span-2 mt-3 md:text-sm text-xs text-white font-mono'>
+					<div className='col-span-2 mt-3 text-sm  text-white font-mono'>
 						{props.skills.map((skill, index) => (
 							<div
 								key={index}
@@ -78,7 +78,7 @@ function AboutMe(props) {
 						))}
 					</div>
 				</div>
-				<h1 className='mt-16'>
+				<h1 className='mt-16 lg:text-lg'>
 					Check out my{' '}
 					<a
 						href={props.resumeLink}

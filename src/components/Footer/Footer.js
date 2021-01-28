@@ -3,7 +3,7 @@ import { SocialIcon } from 'react-social-icons';
 
 function Footer() {
 	return (
-		<div className='footer flex-col items-center justify-center py-3'>
+		<div className='footer flex-col items-center justify-center lg:pt-28 pt-14 pb-8'>
 			<div className='flex justify-center'>
 				<SocialIcon
 					url='https://linkedin.com/in/bao-luong'
