@@ -68,7 +68,7 @@ const ProjectModal = ({ show, closeModal, project }) => {
 							{project.projectSkills.map((skill, index) => (
 								<p
 									key={index}
-									className='badge mt-1 mr-1 uppercase text-white font-mono'
+									className='badge mt-1 mr-1 uppercase text-white font-mono shadow-lg'
 									style={getColor()}
 								>
 									{skill}

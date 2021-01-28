@@ -70,7 +70,7 @@ function AboutMe(props) {
 						{props.skills.map((skill, index) => (
 							<div
 								key={index}
-								className='badge mt-1 mr-1 uppercase font-mono'
+								className='badge mt-1 mr-1 uppercase font-mono shadow-lg'
 								style={getColor()}
 							>
 								{skill}

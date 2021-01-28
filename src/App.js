@@ -140,46 +140,6 @@ const projects = [
 		],
 		projectSkills: ['HTML', 'CSS', 'JS/ES6', 'React JS', 'Tailwind CSS'],
 	},
-	{
-		projectTitle: 'React Portfolio',
-		projectImg: './homepage1.png',
-		projectShortDescription: 'My portfolio site made with ReactJS',
-		projectDescription:
-			'My own personal website made from scratch with ReactJS and Tailwind CSS. You are looking at it!',
-		projectLinks: [
-			{
-				url: 'https://github.com/bnluong/my-react-portfolio',
-				maxWidth: '2.5rem',
-				maxHeight: '2.5rem',
-			},
-			{
-				url: 'http://localhost:3000/',
-				maxWidth: '2.5rem',
-				maxHeight: '2.5rem',
-			},
-		],
-		projectSkills: ['HTML', 'CSS', 'JS/ES6', 'React JS', 'Tailwind CSS'],
-	},
-	{
-		projectTitle: 'React Portfolio',
-		projectImg: './homepage1.png',
-		projectShortDescription: 'My portfolio site made with ReactJS',
-		projectDescription:
-			'My own personal website made from scratch with ReactJS and Tailwind CSS. You are looking at it!',
-		projectLinks: [
-			{
-				url: 'https://github.com/bnluong/my-react-portfolio',
-				maxWidth: '2.5rem',
-				maxHeight: '2.5rem',
-			},
-			{
-				url: 'http://localhost:3000/',
-				maxWidth: '2.5rem',
-				maxHeight: '2.5rem',
-			},
-		],
-		projectSkills: ['HTML', 'CSS', 'JS/ES6', 'React JS', 'Tailwind CSS'],
-	},
 ];
 
 function App() {
