@@ -12,7 +12,6 @@
     "react-router-dom": "^5.2.0",
     "react-router-hash-link": "^2.3.1",
     "react-scripts": "4.0.1",
-    "react-tabs": "^3.1.2",
     "react-tooltip": "^4.2.11",
     "web-vitals": "^0.2.4"
   },

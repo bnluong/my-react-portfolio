@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import LinkIcon from '../Home/LinkIcon';
 import getColor from '../../utilities/getColor';
@@ -80,8 +80,6 @@ const ProjectModal = ({ show, closeModal, project }) => {
 			</div>
 		</div>
 	);
-
-	return null;
 };
 
 export default ProjectModal;
