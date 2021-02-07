@@ -26,3 +26,6 @@ yarn-error.log*
 
 # tailwind compiled css
 /src/styles/main.css
+
+# api keys
+.env
