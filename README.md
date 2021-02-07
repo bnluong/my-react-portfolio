@@ -45,6 +45,9 @@ In the project directory, you can run the following scripts:
 ###### API
 
 -   [EmailJS](https://www.emailjs.com/) - Send email directly from the website
+    ```
+    Note: EmailJS api call uses my private api keys setup. You should use your own api keys.
+    ```
 
 ###### Libraries
 
