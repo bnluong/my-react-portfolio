@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 
+import emailjs from 'emailjs-com';
+
 import FormAlert from './FormAlert';
 
 function ContactForm() {
 	// State for status of emailjs api calls
-	const [status, setStatus] = useState('');
+	const [status, setStatus] = useState(0);
 
 	// State for setting alerts
 	const [show, setShow] = useState(false);
@@ -14,12 +16,32 @@ function ContactForm() {
 	// Form submit handler
 	const handleSubmit = (e) => {
 		e.preventDefault();
-
-		const result = 'failure'; // call api and do something, get a result
-		setStatus(result); // update state
-		showAlert(); // show the alert
-
+		sendEmail(e); // call api
 		e.target.reset();
+	};
+
+	// EmailJS handler
+	// API respond:
+	// 		200 "OK"
+	//		400 "The user_id parameter is required"
+	const sendEmail = (e) => {
+		emailjs
+			.sendForm(
+				'YOUR_SERVICE_ID',
+				'YOUR_TEMPLATE_ID',
+				e.target,
+				'YOUR_USER_ID'
+			)
+			.then(
+				(result) => {
+					setStatus(result.status); // update state
+					showAlert(); // show the alert
+				},
+				(error) => {
+					setStatus(error.status); // update state
+					showAlert(); // show the alert
+				}
+			);
 	};
 
 	return (
@@ -40,7 +62,7 @@ function ContactForm() {
 				<input
 					className='w-full p-2 mt-3 border-2 rounded'
 					type='email'
-					name='email'
+					name='from_email'
 					required
 					placeholder='Your email'
 				/>
