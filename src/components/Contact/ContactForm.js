@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 import FormAlert from './FormAlert';
 
@@ -13,10 +14,15 @@ function ContactForm() {
 	const showAlert = () => setShow(true);
 	const hideAlert = () => setShow(false);
 
+	// Ref for reCAPTCHA
+	const reRef = useRef();
+
 	// Form submit handler
-	const handleSubmit = (e) => {
+	const handleSubmit = async (e) => {
 		e.preventDefault();
-		sendEmail(e); // call api
+		const token = await reRef.current.executeAsync(); // execute the invisible reCAPTCHA
+		sendEmail(e); // call emailjs api
+		reRef.current.reset(); // reset the reCAPTCHA ref
 		e.target.reset();
 	};
 
@@ -87,6 +93,11 @@ function ContactForm() {
 						Send me a message
 					</button>
 				</div>
+				<ReCAPTCHA
+					ref={reRef}
+					size='invisible'
+					sitekey={process.env.REACT_APP_RECAPTCHA_SITEKEY}
+				/>
 			</form>
 		</div>
 	);
