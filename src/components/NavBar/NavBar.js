@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavHashLink } from 'react-router-hash-link';
 import ReactTooltip from 'react-tooltip';
 
@@ -10,6 +10,40 @@ function NavBar(props) {
 	const toggleMenu = () => {
 		toggle(!isToggled);
 	};
+
+	const sections = ['about-me', 'projects', 'contact-me'];
+	// const sections = ['about-me'];
+
+	const isSectionInView = (sectionEle) => {
+		// get the current window offset
+		const viewTop = window.pageYOffset;
+		const viewBottom = viewTop + window.outerHeight;
+
+		// get the section element offset
+		const domRect = sectionEle.getBoundingClientRect();
+		const sectionEleTop = domRect.top;
+		const sectionEleBottom = domRect.bottom;
+		// console.log(
+		// 	'ele:' +
+		// 		sectionEle.id +
+		// 		':' +
+		// 		sectionEleTop +
+		// 		'-' +
+		// 		sectionEleBottom
+		// );
+		return sectionEleTop >= 0 && sectionEleTop <= 250;
+	};
+	useEffect(() => {
+		const onScroll = (e) => {
+			// sections.forEach((section) => {
+			// 	const sectionEle = document.getElementById(section);
+			// 	if (isSectionInView(sectionEle)) window.location.hash = section;
+			// });
+		};
+		window.addEventListener('scroll', onScroll);
+
+		return () => window.removeEventListener('scroll', onScroll);
+	}, []);
 
 	return (
 		<header className='nav-bar fixed w-full top-0 animated z-40 md:px-16 px-6 py-2 md:flex md:items-center md:justify-between shadow-md border-b-2 border-gray-500 bg-white'>
@@ -34,6 +68,7 @@ function NavBar(props) {
 							viewBox='0 0 20 20'
 							fill='currentColor'
 						>
+							>
 							<path
 								fillRule='evenodd'
 								d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
@@ -59,6 +94,14 @@ function NavBar(props) {
 						to='#about-me'
 						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500'
 						activeClassName='border-b-2 border-blue-500 font-semibold'
+						// isActive={(match, location) => {
+						// 	if (!match) {
+						// 		return false;
+						// 	}
+						// 	let scrollY = window.pageYOffset;
+						// 	console.log(scrollY);
+						// 	return true;
+						// }}
 					>
 						About Me
 					</NavHashLink>
@@ -74,7 +117,7 @@ function NavBar(props) {
 						smooth
 						to='#contact-me'
 						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500'
-						activeClassName='border-b-2 border-blue-500 font-semibold '
+						activeClassName='border-b-2 border-blue-500 font-semibold'
 					>
 						Contact
 					</NavHashLink>
