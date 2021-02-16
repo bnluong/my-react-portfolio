@@ -10,35 +10,38 @@ function NavBar(props) {
 	const toggleMenu = () => {
 		toggle(!isToggled);
 	};
+	// const sections = ['about-me', 'projects', 'contact-me'];
 
-	const sections = ['about-me', 'projects', 'contact-me'];
-	// const sections = ['about-me'];
+	const sections = ['home', 'about-me', 'projects', 'contact-me'];
 
-	const isSectionInView = (sectionEle) => {
+	const isSectionInView = (sectionID) => {
 		// get the current window offset
-		const viewTop = window.pageYOffset;
-		const viewBottom = viewTop + window.outerHeight;
+		// const viewTop = window.pageYOffset;
+		// const viewBottom = viewTop + window.outerHeight;
+		// console.log('view:' + viewTop);
 
 		// get the section element offset
-		const domRect = sectionEle.getBoundingClientRect();
-		const sectionEleTop = domRect.top;
-		const sectionEleBottom = domRect.bottom;
+		const domRect = sectionID.getBoundingClientRect();
+		const sectionTop = domRect.top;
+		const sectionHeight = domRect.height;
 		// console.log(
-		// 	'ele:' +
-		// 		sectionEle.id +
-		// 		':' +
-		// 		sectionEleTop +
-		// 		'-' +
-		// 		sectionEleBottom
+		// 	'ele:' + sectionID.id + ':' + sectionTop + '-' + sectionHeight
 		// );
-		return sectionEleTop >= 0 && sectionEleTop <= 250;
+		// console.log('-----------------------------------');
+		return sectionTop <= 250 && Math.abs(sectionTop - 250) <= sectionHeight;
 	};
 	useEffect(() => {
 		const onScroll = (e) => {
-			// sections.forEach((section) => {
-			// 	const sectionEle = document.getElementById(section);
-			// 	if (isSectionInView(sectionEle)) window.location.hash = section;
-			// });
+			sections.forEach((section) => {
+				const sectionID = document.getElementById(section);
+				if (
+					window.location.hash != '#' + section &&
+					isSectionInView(sectionID)
+				) {
+					window.location.hash = section;
+					console.log(section);
+				}
+			});
 		};
 		window.addEventListener('scroll', onScroll);
 
@@ -83,7 +86,7 @@ function NavBar(props) {
 				<nav className='flex flex-wrap items-center sm:justify-evenly justify-between md:py-0 py-3 font-mono'>
 					<NavHashLink
 						smooth
-						to='#top'
+						to='#home'
 						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500'
 						activeClassName='border-b-2 border-blue-500 font-semibold'
 					>
