@@ -10,41 +10,43 @@ function NavBar(props) {
 	const toggleMenu = () => {
 		toggle(!isToggled);
 	};
+
 	// const sections = ['about-me', 'projects', 'contact-me'];
 
-	const sections = ['home', 'about-me', 'projects'];
+	// const isSectionInView = (sectionID) => {
+	// 	// get the current window offset
+	// 	// const viewTop = window.pageYOffset;
+	// 	// const viewBottom = viewTop + window.outerHeight;
+	// 	// console.log('view:' + viewTop);
 
-	const isSectionInView = (sectionID) => {
-		// get the current window offset
-		// const viewTop = window.pageYOffset;
-		// const viewBottom = viewTop + window.outerHeight;
-		// console.log('view:' + viewTop);
+	// 	// get the section element offset
+	// 	const domRect = sectionID.getBoundingClientRect();
+	// 	const sectionTop = domRect.top;
+	// 	const sectionHeight = domRect.height;
+	// 	// console.log(
+	// 	// 	'ele:' + sectionID.id + ':' + sectionTop + '-' + sectionHeight
+	// 	// );
+	// 	console.log('-----------------------------------');
+	// 	return (
+	// 		sectionTop <= 250 && Math.abs(sectionTop - 250) <= sectionHeight / 2
+	// 	);
+	// };
+	// useEffect(() => {
+	// 	const onScroll = (e) => {
+	// 		sections.forEach((section) => {
+	// 			const sectionID = document.getElementById(section);
+	// 			if (
+	// 				isSectionInView(sectionID) &&
+	// 				window.location.hash != '#' + section
+	// 			) {
+	// 				window.location.hash = section;
+	// 			}
+	// 		});
+	// 	};
+	// 	window.addEventListener('scroll', onScroll);
 
-		// get the section element offset
-		const domRect = sectionID.getBoundingClientRect();
-		const sectionTop = domRect.top;
-		const sectionHeight = domRect.height;
-		// console.log(
-		// 	'ele:' + sectionID.id + ':' + sectionTop + '-' + sectionHeight
-		// );
-		console.log('-----------------------------------');
-		return (
-			sectionTop <= 250 && Math.abs(sectionTop - 250) <= sectionHeight / 2
-		);
-	};
-	useEffect(() => {
-		const onScroll = (e) => {
-			sections.forEach((section) => {
-				const sectionID = document.getElementById(section);
-				if (isSectionInView(sectionID)) {
-					console.log(section);
-				}
-			});
-		};
-		window.addEventListener('scroll', onScroll);
-
-		return () => window.removeEventListener('scroll', onScroll);
-	}, []);
+	// 	return () => window.removeEventListener('scroll', onScroll);
+	// }, []);
 
 	return (
 		<header className='nav-bar fixed w-full top-0 animated z-40 md:px-16 px-6 py-2 md:flex md:items-center md:justify-between shadow-md border-b-2 border-gray-500 bg-white'>
@@ -69,7 +71,6 @@ function NavBar(props) {
 							viewBox='0 0 20 20'
 							fill='currentColor'
 						>
-							>
 							<path
 								fillRule='evenodd'
 								d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z'
