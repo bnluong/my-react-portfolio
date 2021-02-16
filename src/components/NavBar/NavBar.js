@@ -12,7 +12,7 @@ function NavBar(props) {
 	};
 	// const sections = ['about-me', 'projects', 'contact-me'];
 
-	const sections = ['home', 'about-me', 'projects', 'contact-me'];
+	const sections = ['home', 'about-me', 'projects'];
 
 	const isSectionInView = (sectionID) => {
 		// get the current window offset
@@ -27,18 +27,16 @@ function NavBar(props) {
 		// console.log(
 		// 	'ele:' + sectionID.id + ':' + sectionTop + '-' + sectionHeight
 		// );
-		// console.log('-----------------------------------');
-		return sectionTop <= 250 && Math.abs(sectionTop - 250) <= sectionHeight;
+		console.log('-----------------------------------');
+		return (
+			sectionTop <= 250 && Math.abs(sectionTop - 250) <= sectionHeight / 2
+		);
 	};
 	useEffect(() => {
 		const onScroll = (e) => {
 			sections.forEach((section) => {
 				const sectionID = document.getElementById(section);
-				if (
-					window.location.hash != '#' + section &&
-					isSectionInView(sectionID)
-				) {
-					window.location.hash = section;
+				if (isSectionInView(sectionID)) {
 					console.log(section);
 				}
 			});
@@ -97,14 +95,6 @@ function NavBar(props) {
 						to='#about-me'
 						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500'
 						activeClassName='border-b-2 border-blue-500 font-semibold'
-						// isActive={(match, location) => {
-						// 	if (!match) {
-						// 		return false;
-						// 	}
-						// 	let scrollY = window.pageYOffset;
-						// 	console.log(scrollY);
-						// 	return true;
-						// }}
 					>
 						About Me
 					</NavHashLink>
