@@ -1,6 +1,8 @@
 import React from 'react';
-import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
+
 import getColor from '../../utilities/getColor';
+
 function AboutMe(props) {
 	return (
 		<div
@@ -19,13 +21,14 @@ function AboutMe(props) {
 					))}
 					<h1 className='mt-6'>
 						Check out my{' '}
-						<HashLink
-							to='#projects'
-							smooth
-							className='text-blue-500 underline'
+						<Link
+							to='projects'
+							smooth={true}
+							duration={350}
+							className='text-blue-500 underline cursor-pointer'
 						>
 							#projects
-						</HashLink>{' '}
+						</Link>{' '}
 						section for stuffs I built.
 					</h1>
 				</div>
