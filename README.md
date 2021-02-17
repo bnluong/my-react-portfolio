@@ -53,10 +53,10 @@ In the project directory, you can run the following scripts:
 
 ###### Libraries
 
--   [react-router-hash-link](https://www.npmjs.com/package/react-router-hash-link) -
-    Smooth scrolling through the website using React Router
+-   [react-scroll](https://www.npmjs.com/package/react-scroll) - Smooth
+    scrolling through the website
 -   [react-tooltip](https://www.npmjs.com/package/react-tooltip) - Tooltip
-    components
+    component
 -   [react-social-icons](https://www.npmjs.com/package/react-social-icons) -
     Icons library
 -   [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha) -

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { NavHashLink } from 'react-router-hash-link';
+import { Link } from 'react-scroll';
 import ReactTooltip from 'react-tooltip';
 
 function NavBar(props) {
@@ -15,8 +15,8 @@ function NavBar(props) {
 		<header className='nav-bar fixed w-full top-0 animated z-40 md:px-16 px-6 py-2 md:flex md:items-center md:justify-between shadow-md border-b-2 border-gray-500 bg-white'>
 			<div className='flex items-center justify-between'>
 				<div className='flex-1 flex items-center'>
-					<NavHashLink smooth to='#top'>
-						<h1 className='text-2xl font-bold font-mono uppercase md:block hidden'>
+					<Link to='home' spy={true} smooth={true} duration={350}>
+						<h1 className='text-2xl font-bold font-mono uppercase md:block hidden cursor-pointer'>
 							Bao Luong
 						</h1>
 						<img
@@ -24,7 +24,7 @@ function NavBar(props) {
 							src={props.navbarPic}
 							alt='navbar-pic'
 						/>
-					</NavHashLink>
+					</Link>
 				</div>
 				{/* Hide the menu toggle button when screen size is big */}
 				<div className='md:hidden'>
@@ -46,38 +46,46 @@ function NavBar(props) {
 			{/* If isToggle == true && screen size is not large, render the toggle menu. Otherwise hide the toggle menu */}
 			<div className={isToggled ? 'md:block ' : 'md:block hidden'}>
 				<nav className='flex flex-wrap items-center sm:justify-evenly justify-between md:py-0 py-3 font-mono'>
-					<NavHashLink
-						smooth
-						to='#home'
-						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500'
-						activeClassName='border-b-2 border-blue-500 font-semibold'
+					<Link
+						to='home'
+						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500 cursor-pointer'
+						activeClass='border-b-2 border-blue-500 font-semibold'
+						spy={true}
+						smooth={true}
+						duration={350}
 					>
 						Home
-					</NavHashLink>
-					<NavHashLink
-						smooth
-						to='#about-me'
-						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500'
-						activeClassName='border-b-2 border-blue-500 font-semibold'
+					</Link>
+					<Link
+						to='about-me'
+						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500 cursor-pointer'
+						activeClass='border-b-2 border-blue-500 font-semibold'
+						spy={true}
+						smooth={true}
+						duration={350}
 					>
 						About Me
-					</NavHashLink>
-					<NavHashLink
-						smooth
-						to='#projects'
-						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500'
-						activeClassName='border-b-2 border-blue-500 font-semibold'
+					</Link>
+					<Link
+						to='projects'
+						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500 cursor-pointer'
+						activeClass='border-b-2 border-blue-500 font-semibold'
+						spy={true}
+						smooth={true}
+						duration={350}
 					>
 						Projects
-					</NavHashLink>
-					<NavHashLink
-						smooth
-						to='#contact-me'
-						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500'
-						activeClassName='border-b-2 border-blue-500 font-semibold'
+					</Link>
+					<Link
+						to='contact-me'
+						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500 cursor-pointer'
+						activeClass='border-b-2 border-blue-500 font-semibold'
+						spy={true}
+						smooth={true}
+						duration={350}
 					>
 						Contact
-					</NavHashLink>
+					</Link>
 					<a href={props.resumeLink} download>
 						<button
 							className='sm:h-8 sm:w-8 h-7 w-7'

@@ -1,5 +1,3 @@
-import { BrowserRouter } from 'react-router-dom';
-
 import NavBar from './components/NavBar/NavBar';
 import Home from './components/Home/Home';
 import AboutMe from './components/AboutMe/AboutMe';
@@ -24,29 +22,27 @@ import { projects } from './data/projectsData';
 function App() {
 	return (
 		<div className='App flex flex-col h-full '>
-			<BrowserRouter>
-				<NavBar navbarPic={navbarPic} resumeLink={resumeLink} />
-				<Home
-					background={background}
-					greeting={greeting}
-					subGreeting={subGreeting}
-					title={title}
-					profilePic={profilePic}
-					socialLinks={socialLinks}
-					elevatorPitch={elevatorPitch}
+			<NavBar navbarPic={navbarPic} resumeLink={resumeLink} />
+			<Home
+				background={background}
+				greeting={greeting}
+				subGreeting={subGreeting}
+				title={title}
+				profilePic={profilePic}
+				socialLinks={socialLinks}
+				elevatorPitch={elevatorPitch}
+			/>
+			<div className='container mx-auto'>
+				<AboutMe
+					about={about}
+					education={education}
+					skills={skills}
+					resumeLink={resumeLink}
 				/>
-				<div className='container mx-auto'>
-					<AboutMe
-						about={about}
-						education={education}
-						skills={skills}
-						resumeLink={resumeLink}
-					/>
-					<Projects projects={projects} />
-					<Contact />
-				</div>
-				<Footer />
-			</BrowserRouter>
+				<Projects projects={projects} />
+				<Contact />
+			</div>
+			<Footer />
 		</div>
 	);
 }
