@@ -38,7 +38,6 @@ function Home(props) {
 						/>
 					</div>
 					<div className='flex flex-row lg:mt-6 mt-3'>
-						{/* Generating social links */}
 						{props.socialLinks.map((link, index) => (
 							<LinkIcon
 								key={index}
@@ -54,7 +53,6 @@ function Home(props) {
 						<h1 className='lg:px-36 lg:text-xl text-justify'>
 							{props.elevatorPitch}
 						</h1>
-						{/* Perhaps adding some buttons that jump to other pages? */}
 						<h1 className='lg:px-36 lg:text-xl text-justify mt-6'>
 							Let's have a{' '}
 							<a

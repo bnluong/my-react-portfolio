@@ -57,10 +57,10 @@ In the project directory, you can run the following scripts:
     scrolling through the website
 -   [react-tooltip](https://www.npmjs.com/package/react-tooltip) - Tooltip
     component
--   [react-social-icons](https://www.npmjs.com/package/react-social-icons) -
-    Icons library
 -   [react-google-recaptcha](https://www.npmjs.com/package/react-google-recaptcha) -
     React component for Google reCAPTCHA v2
+-   [react-social-icons](https://www.npmjs.com/package/react-social-icons) -
+    Icons library
 -   [Hero Icons](https://heroicons.com/) - Icons library
 
 ## Authors

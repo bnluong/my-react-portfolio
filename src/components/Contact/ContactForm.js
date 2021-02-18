@@ -23,13 +23,13 @@ function ContactForm() {
 		const token = await reRef.current.executeAsync(); // execute the invisible reCAPTCHA
 		sendEmail(e); // call emailjs api
 		reRef.current.reset(); // reset the reCAPTCHA ref
-		e.target.reset();
+		e.target.reset(); // reset the form
 	};
 
 	// EmailJS handler
-	// API respond:
+	// API response:
 	// 		200 "OK"
-	//		400 "The user_id parameter is required"
+	//		400 "Error
 	const sendEmail = (e) => {
 		emailjs
 			.sendForm(

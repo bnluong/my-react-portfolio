@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function FormAlertFailure({ hideAlert }) {
+function FormAlertFailure({ hideAlert }) {
 	return (
 		<div
 			className='flex flex-row justify-between p-2 rounded bg-red-500 cursor-pointer'
 			onClick={hideAlert}
 		>
-			<h1 className=' mr-6 font-mono text-white sm:text-base text-sm text-justify '>
+			<h1 className=' mr-6 font-mono text-white sm:text-base text-sm text-justify'>
 				Something went wrong. Please try again.
 			</h1>
 			<button className='w-5 h-5 text-white' onClick={hideAlert}>
@@ -27,3 +27,5 @@ export default function FormAlertFailure({ hideAlert }) {
 		</div>
 	);
 }
+
+export default FormAlertFailure;

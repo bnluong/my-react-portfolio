@@ -5,6 +5,7 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
+// Import data
 import {
 	backgrounds,
 	background,
@@ -21,7 +22,7 @@ import { projects } from './data/projectsData';
 
 function App() {
 	return (
-		<div className='App flex flex-col h-full '>
+		<div className='App flex flex-col h-full'>
 			<NavBar navbarPic={navbarPic} resumeLink={resumeLink} />
 			<Home
 				background={background}

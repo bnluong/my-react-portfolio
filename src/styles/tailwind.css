@@ -5,6 +5,7 @@
 @import 'tailwindcss/utilities';
 
 /* Custom CSS */
+/* Badge styling */
 .badge {
 	@apply rounded-md inline-block py-1 px-2 cursor-pointer tracking-wide;
 }

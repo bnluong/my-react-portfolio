@@ -6,6 +6,7 @@ import usePortal from '../../hooks/usePortal';
 const ProjectCard = ({ project }) => {
 	// State for displaying the modal
 	const [show, showModal] = useState(false);
+
 	// Open modal handler
 	const openModal = () => showModal(true);
 	// Close modal handler

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-scroll';
 import ReactTooltip from 'react-tooltip';
 
@@ -12,7 +12,7 @@ function NavBar(props) {
 	};
 
 	return (
-		<header className='nav-bar fixed w-full top-0 animated z-40 md:px-16 px-6 py-2 md:flex md:items-center md:justify-between shadow-md border-b-2 border-gray-500 bg-white'>
+		<header className='fixed w-full top-0 animated z-40 md:px-16 px-6 py-2 md:flex md:items-center md:justify-between shadow-md border-b-2 border-gray-500 bg-white'>
 			<div className='flex items-center justify-between'>
 				<div className='flex-1 flex items-center'>
 					<Link to='home' spy={true} smooth={true} duration={350}>

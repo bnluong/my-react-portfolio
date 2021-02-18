@@ -1,7 +1,7 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 
-const LinkIcon = (props) => {
+function LinkIcon(props) {
 	return (
 		<div>
 			<SocialIcon
@@ -17,6 +17,6 @@ const LinkIcon = (props) => {
 			/>
 		</div>
 	);
-};
+}
 
 export default LinkIcon;

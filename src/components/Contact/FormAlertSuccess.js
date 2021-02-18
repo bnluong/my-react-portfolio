@@ -1,12 +1,12 @@
 import React from 'react';
 
-export default function FormAlertSuccess({ hideAlert }) {
+function FormAlertSuccess({ hideAlert }) {
 	return (
 		<div
 			className='flex flex-row justify-between p-2 rounded bg-blue-500 cursor-pointer'
 			onClick={hideAlert}
 		>
-			<h1 className=' mr-6 font-mono text-white sm:text-base text-sm text-justify '>
+			<h1 className=' mr-6 font-mono text-white sm:text-base text-sm text-justify'>
 				Thank you for sending me a message. I will get back to you as
 				soon as possible.
 			</h1>
@@ -30,3 +30,5 @@ export default function FormAlertSuccess({ hideAlert }) {
 		</div>
 	);
 }
+
+export default FormAlertSuccess;
