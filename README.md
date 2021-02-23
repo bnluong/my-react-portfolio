@@ -15,6 +15,9 @@ modification and redistribution are not allowed.
 
 ## Getting Started
 
+#### Prerequisite
+Latest version of nodejs and npm
+
 #### Getting the Source Code
 
 ```
@@ -48,7 +51,7 @@ In the project directory, you can run the following scripts:
 -   [reCAPTCHA](https://www.google.com/recaptcha/about/) - reCAPTCHA integration
     for EmailJS
     ```
-    Note: API call uses my private api keys setup. You should use your own api keys for these APIs. Set them up in the .env file and change the variable names accordingly.
+    Note: API call uses my private api keys setup. You should use your own api keys for these APIs. Set them up in the .env file (placed at the root directory of the project) and change the variable names accordingly. Refer to (https://create-react-app.dev/docs/adding-custom-environment-variables/) for more information.
     ```
 
 ###### Libraries
