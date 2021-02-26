@@ -7,7 +7,7 @@ import './Home.css';
 function Home(props) {
 	return (
 		<div
-			className='flex items-center justify-center min-h-screen pt-36 bg-cover bg-fixed bg-center text-gray-200'
+			className='flex items-center justify-center min-h-screen pt-36 sm:pb-0 pb-12 bg-cover bg-fixed bg-center text-gray-200'
 			id='home'
 			style={{
 				backgroundImage: `url(${props.background})`, // Template literals
