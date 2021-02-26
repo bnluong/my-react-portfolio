@@ -35,7 +35,7 @@ export const projects = [
 	},
 	{
 		projectTitle: 'React Portfolio',
-		projectImg: './homepage1.png',
+		projectImg: './projects/portfolio.png',
 		projectShortDescription: 'My portfolio site made with ReactJS',
 		projectDescription: [
 			'My own personal website made from scratch with ReactJS and Tailwind CSS. You are looking at it!',
