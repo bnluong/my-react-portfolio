@@ -39,7 +39,7 @@ const ProjectModal = ({ show, closeModal, project }) => {
 					<div className='md:grid lg:grid-cols-3 md:grid-cols-2 mt-6'>
 						<div className='md:mr-12 lg:col-span-2'>
 							<img
-								className='w-full h-full object-cover'
+								className='w-full h-full object-scale-down'
 								src={project.projectImg}
 								alt=''
 							/>
@@ -63,7 +63,13 @@ const ProjectModal = ({ show, closeModal, project }) => {
 								</div>
 							</div>
 							<div className='lg:text-lg mt-6'>
-								{project.projectDescription}
+								{project.projectDescription.map(
+									(description, index) => (
+										<p key={index} className='mt-3'>
+											{description}
+										</p>
+									)
+								)}
 							</div>
 							<div className='flex flex-wrap text-sm font-mono mt-6'>
 								{project.projectSkills.map((skill, index) => (

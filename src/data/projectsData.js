@@ -5,8 +5,12 @@ export const projects = [
 		projectImg: './homepage.png',
 		projectShortDescription:
 			'Buy-a-Movie is a mock e-commerce website that sells movies.',
-		projectDescription:
+		projectDescription: [
 			'Buy-a-Movie is a mock e-commerce website that sells movies. The website has standard e-commerce features such as searching, browsing, add to cart, checkout, login, create account, authentication, etc.',
+			'The website is a demonstration of my understanding and studying of full-stack web development. It utilizes the microservices architecture with the use of REST APIs to achieve front-end/back-end separation.',
+			'The website is designed with the responsive approach. It will display and fit various screens from desktop to small smart phones.',
+			'This is my first attempt to build a full-stack web app. It does not use modern tech stack but it served as a strong foundation for me to continue learning and developing modern web app using modern stack',
+		],
 		projectLinks: [
 			{
 				url: 'https://github.com/bnluong/buy-a-movie',
@@ -15,21 +19,27 @@ export const projects = [
 			},
 		],
 		projectSkills: [
-			'HTML/CSS/VanillaJS',
+			'HTML',
+			'CSS',
+			'Javascript',
 			'Bootstrap',
 			'jQuery',
+			'JSON',
 			'Java EE',
-			'SQL',
-			'Tomcat',
+			'My SQL',
+			'Microservices',
 			'REST API',
+			'Tomcat',
+			'Maven',
 		],
 	},
 	{
 		projectTitle: 'React Portfolio',
 		projectImg: './homepage1.png',
 		projectShortDescription: 'My portfolio site made with ReactJS',
-		projectDescription:
+		projectDescription: [
 			'My own personal website made from scratch with ReactJS and Tailwind CSS. You are looking at it!',
+		],
 		projectLinks: [
 			{
 				url: 'https://github.com/bnluong/my-react-portfolio',
