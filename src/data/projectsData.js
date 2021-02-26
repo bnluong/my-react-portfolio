@@ -2,12 +2,12 @@
 export const projects = [
 	{
 		projectTitle: 'Buy-a-Movie',
-		projectImg: './homepage.png',
+		projectImg: './projects/buy_a_movie.png',
 		projectShortDescription:
 			'Buy-a-Movie is a mock e-commerce website that sells movies.',
 		projectDescription: [
 			'Buy-a-Movie is a mock e-commerce website that sells movies. The website has standard e-commerce features such as searching, browsing, add to cart, checkout, login, create account, authentication, etc.',
-			'The website is a demonstration of my understanding and studying of full-stack web development. It utilizes the microservices architecture with the use of REST APIs to achieve front-end/back-end separation.',
+			'The website utilizes microservices architecture with the use of REST APIs to achieve front-end/back-end separation.',
 			'The website is designed with the responsive approach. It will display and fit various screens from desktop to small smart phones.',
 			'This is my first attempt to build a full-stack web app. It does not use modern tech stack but it served as a strong foundation for me to continue learning and developing modern web app using modern stack',
 		],
@@ -19,9 +19,9 @@ export const projects = [
 			},
 		],
 		projectSkills: [
-			'HTML',
-			'CSS',
-			'Javascript',
+			'HTML5',
+			'CSS3',
+			'JavaScript',
 			'Bootstrap',
 			'jQuery',
 			'JSON',
