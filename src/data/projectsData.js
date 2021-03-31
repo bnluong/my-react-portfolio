@@ -13,6 +13,11 @@ export const projects = [
 		],
 		projectLinks: [
 			{
+				url: 'https://www.youtube.com/watch?v=idoEeiNtcgw',
+				maxWidth: '2rem',
+				maxHeight: '2rem',
+			},
+			{
 				url: 'https://github.com/bnluong/buy-a-movie',
 				maxWidth: '2rem',
 				maxHeight: '2rem',

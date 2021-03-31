@@ -6,6 +6,7 @@ function LinkIcon(props) {
 		<div>
 			<SocialIcon
 				url={props.url}
+				target='_blank'
 				fgColor={props.fgColor}
 				bgColor={props.bgColor}
 				style={{
