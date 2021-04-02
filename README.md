@@ -2,7 +2,7 @@
   <h1 align="center">My Personal Portfolio Website</h1>
 
   <p align="center">
-    <a href="https://github.com/bnluong">TBA</a>
+    <a href="https://bnluong.github.io/my-react-portfolio">Click here to visit my website!</a>
   </p>
 </p>
 
@@ -16,6 +16,7 @@ modification and redistribution are not allowed.
 ## Getting Started
 
 #### Prerequisite
+
 Latest version of nodejs and npm
 
 #### Getting the Source Code
@@ -39,6 +40,10 @@ In the project directory, you can run the following scripts:
     browser.
 
 ## Built With
+
+###### Deployed on
+
+-   [gh-pages](https://www.npmjs.com/package/gh-pages) - GitHub Pages
 
 ###### Frameworks
 
