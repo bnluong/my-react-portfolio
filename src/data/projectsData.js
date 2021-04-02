@@ -9,7 +9,7 @@ export const projects = [
 			'Buy-a-Movie is a mock e-commerce website that sells movies. The website has standard e-commerce features such as searching, browsing, add to cart, checkout, login, create account, authentication, etc.',
 			'The website utilizes microservices architecture with the use of REST APIs to achieve front-end/back-end separation.',
 			'The website is designed with the responsive approach. It will display and fit various screens from desktop to small smart phones.',
-			'This is my first attempt to build a full-stack web app. It does not use modern tech stack but it served as a strong foundation for me to continue learning and developing modern web app using modern stack',
+			'This is my first attempt to build a full-stack web app. It does not use modern tech stack but it served as a strong foundation for me to continue learning and developing modern web app using modern stack.',
 		],
 		projectLinks: [
 			{
@@ -90,5 +90,45 @@ export const projects = [
 			},
 		],
 		projectSkills: ['C#', 'Unity', 'Sprint', 'Teamwork'],
+	},
+	{
+		projectTitle: 'LIDAR Filters',
+		projectImg: './projects/lidar.png',
+		projectShortDescription:
+			'Two LIDAR filters to reduce noise in data collected by a LIDAR sensor',
+		projectDescription: [
+			`LIDAR filters is used to reduce noise in data collected by LIDAR sensors.`,
+			`- Range filter: Crops all values that below a defined minimum/maximun range and replaces them with the minimum/maximun range values.`,
+			`- Temporal median filter: For each iteration fo the scans (i.e range from 0 to N-1 scan), filter out the data with the medium of the current i scan and the previous D scans.`,
+		],
+		projectLinks: [
+			{
+				url: 'https://github.com/bnluong/LIDAR-filter',
+				maxWidth: '2rem',
+				maxHeight: '2rem',
+			},
+		],
+		projectSkills: ['C++', 'GNU g++', 'CMake', 'VSCode'],
+	},
+	{
+		projectTitle: 'Simple Search Engine',
+		projectImg: './projects/simple_search_engine.png',
+		projectShortDescription:
+			'A simple search engine which features web crawling, indexing, and retrieving over a static corpus',
+		projectDescription: [
+			'A simple search engine that performs web search over the UCI ICS domain.',
+			'The ICS domain is downloaded as a static corpus (set of documents the seach engine can perform on).',
+			'Features both a front-end and a back-end.',
+			'Utilized OOP design and implementation.',
+			'Optimized retrieving and indexing time by performing pre-checks at startup.',
+		],
+		projectLinks: [],
+		projectSkills: [
+			'Python 3',
+			'RegEX',
+			'NLTK',
+			'Web Scraping',
+			'TF-IDF Indexing',
+		],
 	},
 ];
