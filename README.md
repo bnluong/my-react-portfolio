@@ -1,7 +1,7 @@
 <p align="center">
   <h1 align="center">My Personal Portfolio Website</h1>
 
-  ![](/portfolio.png?raw=true | width=720)
+  ![](/portfolio.png?raw=true)
 
   <p align="center">
     <a href="https://bnluong.github.io/my-react-portfolio">Click here to visit my website!</a>
