@@ -13,12 +13,12 @@ export const projects = [
 		],
 		projectLinks: [
 			{
-				url: 'https://www.youtube.com/watch?v=idoEeiNtcgw',
+				url: 'https://github.com/bnluong/buy-a-movie',
 				maxWidth: '2rem',
 				maxHeight: '2rem',
 			},
 			{
-				url: 'https://github.com/bnluong/buy-a-movie',
+				url: 'https://www.youtube.com/watch?v=idoEeiNtcgw',
 				maxWidth: '2rem',
 				maxHeight: '2rem',
 			},
@@ -58,5 +58,37 @@ export const projects = [
 			},
 		],
 		projectSkills: ['HTML', 'CSS', 'JS/ES6', 'React JS', 'Tailwind CSS'],
+	},
+	{
+		projectTitle: 'Nightmare Survivor',
+		projectImg: './projects/nightmare.png',
+		projectShortDescription: 'Nightmare Survivor - An FPS made with Unity',
+		projectDescription: [
+			`Nightmare Survivor is a prototyped 3D, first-person computer game in which players' nightmares manifest and become reality. The game featured standard key binding, 1st person camera control, collision detection, ray tracing, and basic AI components.`,
+		],
+		projectLinks: [
+			{
+				url: 'https://github.com/Arma15/BestGame',
+				maxWidth: '2rem',
+				maxHeight: '2rem',
+			},
+			{
+				url: 'https://lmonzon72.wixsite.com/viperz',
+				maxWidth: '2rem',
+				maxHeight: '2rem',
+			},
+			{
+				url: 'https://www.youtube.com/watch?v=3TRTN4HoHZ8',
+				maxWidth: '2rem',
+				maxHeight: '2rem',
+			},
+			{
+				url:
+					'https://drive.google.com/file/d/1WFzLb_wnoIv3hf-_S6MKOlZWWEme_5_F/view?usp=sharing',
+				maxWidth: '2rem',
+				maxHeight: '2rem',
+			},
+		],
+		projectSkills: ['C#', 'Unity', 'Sprint', 'Teamwork'],
 	},
 ];
