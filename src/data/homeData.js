@@ -2,6 +2,7 @@
 export const backgrounds = [
 	'./home/background_A.jpg',
 	'./home/background_B.jpg',
+	'./home/background_C.jpg',
 ];
 export const background =
 	backgrounds[Math.floor(Math.random() * backgrounds.length)];
