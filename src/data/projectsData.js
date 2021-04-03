@@ -52,7 +52,7 @@ export const projects = [
 				maxHeight: '2rem',
 			},
 			{
-				url: 'http://localhost:3000/',
+				url: 'https://bnluong.github.io/my-react-portfolio/',
 				maxWidth: '2rem',
 				maxHeight: '2rem',
 			},
