@@ -1,8 +1,8 @@
 // Home page data
 export const backgrounds = [
-	'./home/background_A.jpg',
-	'./home/background_B.jpg',
-	'./home/background_C.jpg',
+	process.env.PUBLIC_URL + '/home/background_A.jpg',
+	process.env.PUBLIC_URL + '/home/background_B.jpg',
+	process.env.PUBLIC_URL + '/home/background_C.jpg',
 ];
 export const background =
 	backgrounds[Math.floor(Math.random() * backgrounds.length)];
