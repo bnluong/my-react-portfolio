@@ -20,7 +20,7 @@ function ContactForm() {
 	// Form submit handler
 	const handleSubmit = async (e) => {
 		e.preventDefault();
-		const token = await reRef.current.executeAsync(); // execute the invisible reCAPTCHA
+		await reRef.current.executeAsync(); // execute the invisible reCAPTCHA
 		sendEmail(e); // call emailjs api
 		reRef.current.reset(); // reset the reCAPTCHA ref
 		e.target.reset(); // reset the form
