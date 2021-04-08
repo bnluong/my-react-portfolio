@@ -67,7 +67,7 @@ const ProjectModal = ({ show, closeModal, project }) => {
 									(description, index) => (
 										<li
 											key={index}
-											className='mt-3'
+											className='mt-3 mx-3'
 											style={{
 												listStyleType: 'circle',
 											}}
