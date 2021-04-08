@@ -49,7 +49,7 @@ function Home(props) {
 							/>
 						))}
 					</div>
-					<div className='container mx-auto lg:mt-16 mt-8'>
+					<div className='container mx-auto lg:mt-16 mt-8 lg:pb-6'>
 						<h1 className='lg:px-36 lg:text-xl text-justify'>
 							{props.elevatorPitch}
 						</h1>
