@@ -62,15 +62,21 @@ const ProjectModal = ({ show, closeModal, project }) => {
 									))}
 								</div>
 							</div>
-							<div className='lg:text-lg mt-6'>
+							<ul className='lg:text-lg mt-6'>
 								{project.projectDescription.map(
 									(description, index) => (
-										<p key={index} className='mt-3'>
+										<li
+											key={index}
+											className='mt-3'
+											style={{
+												listStyleType: 'circle',
+											}}
+										>
 											{description}
-										</p>
+										</li>
 									)
 								)}
-							</div>
+							</ul>
 							<div className='flex flex-wrap text-sm font-mono mt-6'>
 								{project.projectSkills.map((skill, index) => (
 									<p

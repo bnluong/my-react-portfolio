@@ -16,14 +16,9 @@ function NavBar(props) {
 			<div className='flex items-center justify-between'>
 				<div className='flex-1 flex items-center'>
 					<Link to='home' spy={true} smooth={true} duration={350}>
-						<h1 className='text-2xl font-bold font-mono uppercase md:block hidden cursor-pointer'>
+						<h1 className='text-2xl font-bold font-mono uppercase cursor-pointer'>
 							Bao Luong
 						</h1>
-						<img
-							className='h-10 w-10 rounded-full md:hidden'
-							src={props.navbarPic}
-							alt='navbar-pic'
-						/>
 					</Link>
 				</div>
 				{/* Hide the menu toggle button when screen size is big */}
@@ -48,7 +43,7 @@ function NavBar(props) {
 				<nav className='flex flex-wrap items-center sm:justify-evenly justify-between md:py-0 py-3 font-mono'>
 					<Link
 						to='home'
-						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500 cursor-pointer'
+						className='block sm:mx-3 uppercase sm:text-xl text-base hover:border-b-2 hover:border-blue-500 cursor-pointer'
 						activeClass='border-b-2 border-blue-500 font-semibold'
 						spy={true}
 						smooth={true}
@@ -58,7 +53,7 @@ function NavBar(props) {
 					</Link>
 					<Link
 						to='about-me'
-						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500 cursor-pointer'
+						className='block sm:mx-3 uppercase sm:text-xl text-base hover:border-b-2 hover:border-blue-500 cursor-pointer'
 						activeClass='border-b-2 border-blue-500 font-semibold'
 						spy={true}
 						smooth={true}
@@ -68,7 +63,7 @@ function NavBar(props) {
 					</Link>
 					<Link
 						to='projects'
-						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500 cursor-pointer'
+						className='block sm:mx-3 uppercase sm:text-xl text-base hover:border-b-2 hover:border-blue-500 cursor-pointer'
 						activeClass='border-b-2 border-blue-500 font-semibold'
 						spy={true}
 						smooth={true}
@@ -78,7 +73,7 @@ function NavBar(props) {
 					</Link>
 					<Link
 						to='contact-me'
-						className='block sm:mx-3 uppercase sm:text-xl text-xs hover:border-b-2 hover:border-blue-500 cursor-pointer'
+						className='block sm:mx-3 uppercase sm:text-xl text-base hover:border-b-2 hover:border-blue-500 cursor-pointer'
 						activeClass='border-b-2 border-blue-500 font-semibold'
 						spy={true}
 						smooth={true}
