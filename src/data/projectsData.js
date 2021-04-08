@@ -2,7 +2,7 @@
 export const projects = [
 	{
 		projectTitle: 'Buy-a-Movie',
-		projectImg: './projects/buy_a_movie.png',
+		projectImg: process.env.PUBLIC_URL + '/projects/buy_a_movie.png',
 		projectShortDescription:
 			'Buy-a-Movie is a mock e-commerce website that sells movies.',
 		projectDescription: [
@@ -40,7 +40,7 @@ export const projects = [
 	},
 	{
 		projectTitle: 'React Portfolio',
-		projectImg: './projects/portfolio.png',
+		projectImg: process.env.PUBLIC_URL + '/projects/portfolio.png',
 		projectShortDescription: 'My portfolio site made with ReactJS',
 		projectDescription: [
 			'My own personal website made from scratch with ReactJS and Tailwind CSS. You are looking at it!',
@@ -61,7 +61,7 @@ export const projects = [
 	},
 	{
 		projectTitle: 'Nightmare Survivor',
-		projectImg: './projects/nightmare.png',
+		projectImg: process.env.PUBLIC_URL + '/projects/nightmare.png',
 		projectShortDescription: 'Nightmare Survivor - An FPS made with Unity',
 		projectDescription: [
 			`Nightmare Survivor is a prototyped 3D, first-person computer game in which players' nightmares manifest and become reality. The game featured standard key binding, 1st person camera control, collision detection, ray tracing, and basic AI components.`,
@@ -93,7 +93,7 @@ export const projects = [
 	},
 	{
 		projectTitle: 'LIDAR Filters',
-		projectImg: './projects/lidar.png',
+		projectImg: process.env.PUBLIC_URL + '/projects/lidar.png',
 		projectShortDescription:
 			'Two LIDAR filters to reduce noise in data collected by a LIDAR sensor',
 		projectDescription: [
@@ -112,7 +112,8 @@ export const projects = [
 	},
 	{
 		projectTitle: 'Simple Search Engine',
-		projectImg: './projects/simple_search_engine.png',
+		projectImg:
+			process.env.PUBLIC_URL + '/projects/simple_search_engine.png',
 		projectShortDescription:
 			'A simple search engine which features web crawling, indexing, and retrieving over a static corpus',
 		projectDescription: [

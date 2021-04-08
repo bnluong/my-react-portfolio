@@ -9,7 +9,7 @@ export const background =
 export const greeting = 'Hello World!';
 export const subGreeting = 'My name is Bao Luong';
 export const title = 'Aspiring Software Engineer';
-export const profilePic = './home/profile_pic.jpg';
+export const profilePic = process.env.PUBLIC_URL + '/home/profile_pic.jpg';
 export const socialLinks = [
 	{
 		url: 'https://linkedin.com/in/bao-luong',
