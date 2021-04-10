@@ -43,7 +43,8 @@ export const projects = [
 		projectImg: process.env.PUBLIC_URL + '/projects/portfolio.png',
 		projectShortDescription: 'My portfolio site made with ReactJS',
 		projectDescription: [
-			'My own personal website made from scratch with ReactJS and Tailwind CSS. You are looking at it!',
+			'My own personal website made from scratch with ReactJS and Tailwind CSS.',
+			'You are looking at it!',
 		],
 		projectLinks: [
 			{
@@ -64,7 +65,9 @@ export const projects = [
 		projectImg: process.env.PUBLIC_URL + '/projects/nightmare.png',
 		projectShortDescription: 'Nightmare Survivor - An FPS made with Unity',
 		projectDescription: [
-			`Nightmare Survivor is a prototyped 3D, first-person computer game in which players' nightmares manifest and become reality. The game featured standard key binding, 1st person camera control, collision detection, ray tracing, and basic AI components.`,
+			`Nightmare Survivor is a prototyped 3D, first-person computer game in which players' nightmares manifest and become reality.`,
+			`The game featured standard key binding, 1st person camera control, collision detection, ray tracing, and basic AI components.`,
+			`You can download the game from the Google Drive link above to try it. Works on Windows only.`,
 		],
 		projectLinks: [
 			{
@@ -98,8 +101,8 @@ export const projects = [
 			'Two LIDAR filters to reduce noise in data collected by a LIDAR sensor',
 		projectDescription: [
 			`LIDAR filters is used to reduce noise in data collected by LIDAR sensors.`,
-			`- Range filter: Crops all values that below a defined minimum/maximun range and replaces them with the minimum/maximun range values.`,
-			`- Temporal median filter: For each iteration fo the scans (i.e range from 0 to N-1 scan), filter out the data with the medium of the current i scan and the previous D scans.`,
+			`Range filter: Crops all values that below a defined minimum/maximun range and replaces them with the minimum/maximun range values.`,
+			`Temporal median filter: For each iteration fo the scans (i.e range from 0 to N-1 scan), filter out the data with the medium of the current i scan and the previous D scans.`,
 		],
 		projectLinks: [
 			{
