@@ -11,6 +11,7 @@ postpone my post-grad job search in order to help taking
 care of my family. During this time, I picked up
 full-stack web development. I really enjoyed learning
 and building full-stack web app from scratch.`,
+	`When not coding, I enjoy playing classical guitar and listening to classical music while reading books.`,
 ];
 export const education = [
 	{
