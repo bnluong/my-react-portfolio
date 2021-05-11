@@ -86,8 +86,7 @@ export const projects = [
 				maxHeight: '2rem',
 			},
 			{
-				url:
-					'https://drive.google.com/file/d/1WFzLb_wnoIv3hf-_S6MKOlZWWEme_5_F/view?usp=sharing',
+				url: 'https://drive.google.com/file/d/1WFzLb_wnoIv3hf-_S6MKOlZWWEme_5_F/view?usp=sharing',
 				maxWidth: '2rem',
 				maxHeight: '2rem',
 			},
@@ -100,7 +99,7 @@ export const projects = [
 		projectShortDescription:
 			'Two LIDAR filters to reduce noise in data collected by a LIDAR sensor',
 		projectDescription: [
-			`LIDAR filters is used to reduce noise in data collected by LIDAR sensors.`,
+			`A set of LIDAR filters to reduce noise in data collected by LIDAR sensors.`,
 			`Range filter: Crops all values that below a defined minimum/maximun range and replaces them with the minimum/maximun range values.`,
 			`Temporal median filter: For each iteration fo the scans (i.e range from 0 to N-1 scan), filter out the data with the medium of the current i scan and the previous D scans.`,
 		],

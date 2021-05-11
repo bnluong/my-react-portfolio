@@ -7,6 +7,8 @@ function Footer() {
 			<div className='flex justify-center'>
 				<SocialIcon
 					url='https://linkedin.com/in/bao-luong'
+					fgColor='#ffffff'
+					bgColor='#1f1f1f'
 					style={{
 						maxWidth: '2rem',
 						maxHeight: '2rem',
@@ -17,6 +19,8 @@ function Footer() {
 				/>
 				<SocialIcon
 					url='https://github.com/bnluong'
+					fgColor='#ffffff'
+					bgColor='#1f1f1f'
 					style={{
 						maxWidth: '2rem',
 						maxHeight: '2rem',
@@ -25,8 +29,8 @@ function Footer() {
 				/>
 				<SocialIcon
 					url='mailto:bnluong@uci.edu'
-					bgColor='#52afd3'
 					fgColor='#ffffff'
+					bgColor='#1f1f1f'
 					style={{
 						maxWidth: '2rem',
 						maxHeight: '2rem',
